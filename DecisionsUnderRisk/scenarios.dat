@@ -1,0 +1,2806 @@
+param price :=
+    A Jan S1 115
+    A Feb S1 96
+    B Jan S1 112
+    B Feb S1 102
+    C Jan S1 98
+    C Feb S1 111
+    A Jan S2 116
+    A Feb S2 106
+    B Jan S2 111
+    B Feb S2 97
+    C Jan S2 105
+    C Feb S2 111
+    A Jan S3 115
+    A Feb S3 103
+    B Jan S3 110
+    B Feb S3 99
+    C Jan S3 100
+    C Feb S3 107
+    A Jan S4 116
+    A Feb S4 103
+    B Jan S4 113
+    B Feb S4 91
+    C Jan S4 107
+    C Feb S4 113
+    A Jan S5 114
+    A Feb S5 93
+    B Jan S5 113
+    B Feb S5 98
+    C Jan S5 103
+    C Feb S5 104
+    A Jan S6 114
+    A Feb S6 97
+    B Jan S6 114
+    B Feb S6 96
+    C Jan S6 110
+    C Feb S6 107
+    A Jan S7 117
+    A Feb S7 104
+    B Jan S7 110
+    B Feb S7 110
+    C Jan S7 102
+    C Feb S7 113
+    A Jan S8 115
+    A Feb S8 99
+    B Jan S8 112
+    B Feb S8 96
+    C Jan S8 107
+    C Feb S8 108
+    A Jan S9 116
+    A Feb S9 105
+    B Jan S9 114
+    B Feb S9 91
+    C Jan S9 108
+    C Feb S9 109
+    A Jan S10 116
+    A Feb S10 103
+    B Jan S10 113
+    B Feb S10 94
+    C Jan S10 108
+    C Feb S10 112
+    A Jan S11 116
+    A Feb S11 103
+    B Jan S11 111
+    B Feb S11 102
+    C Jan S11 107
+    C Feb S11 109
+    A Jan S12 115
+    A Feb S12 98
+    B Jan S12 111
+    B Feb S12 91
+    C Jan S12 101
+    C Feb S12 118
+    A Jan S13 116
+    A Feb S13 105
+    B Jan S13 110
+    B Feb S13 95
+    C Jan S13 112
+    C Feb S13 108
+    A Jan S14 116
+    A Feb S14 105
+    B Jan S14 110
+    B Feb S14 111
+    C Jan S14 104
+    C Feb S14 112
+    A Jan S15 116
+    A Feb S15 104
+    B Jan S15 112
+    B Feb S15 101
+    C Jan S15 107
+    C Feb S15 106
+    A Jan S16 116
+    A Feb S16 109
+    B Jan S16 115
+    B Feb S16 103
+    C Jan S16 107
+    C Feb S16 109
+    A Jan S17 114
+    A Feb S17 100
+    B Jan S17 112
+    B Feb S17 90
+    C Jan S17 108
+    C Feb S17 106
+    A Jan S18 117
+    A Feb S18 99
+    B Jan S18 113
+    B Feb S18 108
+    C Jan S18 110
+    C Feb S18 108
+    A Jan S19 116
+    A Feb S19 108
+    B Jan S19 113
+    B Feb S19 89
+    C Jan S19 107
+    C Feb S19 109
+    A Jan S20 115
+    A Feb S20 95
+    B Jan S20 112
+    B Feb S20 99
+    C Jan S20 109
+    C Feb S20 108
+    A Jan S21 115
+    A Feb S21 103
+    B Jan S21 113
+    B Feb S21 90
+    C Jan S21 106
+    C Feb S21 110
+    A Jan S22 117
+    A Feb S22 106
+    B Jan S22 111
+    B Feb S22 95
+    C Jan S22 108
+    C Feb S22 108
+    A Jan S23 117
+    A Feb S23 105
+    B Jan S23 112
+    B Feb S23 103
+    C Jan S23 100
+    C Feb S23 112
+    A Jan S24 116
+    A Feb S24 116
+    B Jan S24 111
+    B Feb S24 98
+    C Jan S24 103
+    C Feb S24 111
+    A Jan S25 116
+    A Feb S25 106
+    B Jan S25 112
+    B Feb S25 95
+    C Jan S25 113
+    C Feb S25 108
+    A Jan S26 115
+    A Feb S26 105
+    B Jan S26 111
+    B Feb S26 100
+    C Jan S26 99
+    C Feb S26 113
+    A Jan S27 116
+    A Feb S27 99
+    B Jan S27 110
+    B Feb S27 86
+    C Jan S27 108
+    C Feb S27 110
+    A Jan S28 114
+    A Feb S28 106
+    B Jan S28 110
+    B Feb S28 91
+    C Jan S28 108
+    C Feb S28 105
+    A Jan S29 115
+    A Feb S29 90
+    B Jan S29 114
+    B Feb S29 105
+    C Jan S29 110
+    C Feb S29 107
+    A Jan S30 117
+    A Feb S30 104
+    B Jan S30 110
+    B Feb S30 98
+    C Jan S30 106
+    C Feb S30 110
+    A Jan S31 115
+    A Feb S31 93
+    B Jan S31 112
+    B Feb S31 100
+    C Jan S31 109
+    C Feb S31 109
+    A Jan S32 116
+    A Feb S32 113
+    B Jan S32 111
+    B Feb S32 95
+    C Jan S32 111
+    C Feb S32 107
+    A Jan S33 116
+    A Feb S33 120
+    B Jan S33 112
+    B Feb S33 100
+    C Jan S33 104
+    C Feb S33 107
+    A Jan S34 115
+    A Feb S34 100
+    B Jan S34 114
+    B Feb S34 102
+    C Jan S34 102
+    C Feb S34 109
+    A Jan S35 116
+    A Feb S35 93
+    B Jan S35 110
+    B Feb S35 80
+    C Jan S35 103
+    C Feb S35 116
+    A Jan S36 115
+    A Feb S36 108
+    B Jan S36 113
+    B Feb S36 97
+    C Jan S36 107
+    C Feb S36 111
+    A Jan S37 115
+    A Feb S37 104
+    B Jan S37 113
+    B Feb S37 103
+    C Jan S37 107
+    C Feb S37 108
+    A Jan S38 113
+    A Feb S38 105
+    B Jan S38 112
+    B Feb S38 89
+    C Jan S38 108
+    C Feb S38 107
+    A Jan S39 115
+    A Feb S39 103
+    B Jan S39 112
+    B Feb S39 104
+    C Jan S39 107
+    C Feb S39 106
+    A Jan S40 114
+    A Feb S40 98
+    B Jan S40 111
+    B Feb S40 108
+    C Jan S40 102
+    C Feb S40 112
+    A Jan S41 114
+    A Feb S41 101
+    B Jan S41 110
+    B Feb S41 96
+    C Jan S41 100
+    C Feb S41 110
+    A Jan S42 116
+    A Feb S42 101
+    B Jan S42 115
+    B Feb S42 104
+    C Jan S42 110
+    C Feb S42 108
+    A Jan S43 116
+    A Feb S43 102
+    B Jan S43 114
+    B Feb S43 109
+    C Jan S43 105
+    C Feb S43 108
+    A Jan S44 116
+    A Feb S44 110
+    B Jan S44 110
+    B Feb S44 103
+    C Jan S44 102
+    C Feb S44 107
+    A Jan S45 115
+    A Feb S45 100
+    B Jan S45 112
+    B Feb S45 98
+    C Jan S45 106
+    C Feb S45 107
+    A Jan S46 115
+    A Feb S46 107
+    B Jan S46 116
+    B Feb S46 86
+    C Jan S46 105
+    C Feb S46 114
+    A Jan S47 116
+    A Feb S47 104
+    B Jan S47 114
+    B Feb S47 120
+    C Jan S47 106
+    C Feb S47 110
+    A Jan S48 116
+    A Feb S48 120
+    B Jan S48 113
+    B Feb S48 96
+    C Jan S48 107
+    C Feb S48 106
+    A Jan S49 117
+    A Feb S49 102
+    B Jan S49 113
+    B Feb S49 94
+    C Jan S49 110
+    C Feb S49 114
+    A Jan S50 117
+    A Feb S50 102
+    B Jan S50 112
+    B Feb S50 97
+    C Jan S50 108
+    C Feb S50 112
+    A Jan S51 116
+    A Feb S51 110
+    B Jan S51 111
+    B Feb S51 97
+    C Jan S51 105
+    C Feb S51 110
+    A Jan S52 114
+    A Feb S52 106
+    B Jan S52 109
+    B Feb S52 108
+    C Jan S52 97
+    C Feb S52 108
+    A Jan S53 116
+    A Feb S53 100
+    B Jan S53 113
+    B Feb S53 101
+    C Jan S53 110
+    C Feb S53 112
+    A Jan S54 115
+    A Feb S54 111
+    B Jan S54 111
+    B Feb S54 95
+    C Jan S54 107
+    C Feb S54 103
+    A Jan S55 115
+    A Feb S55 95
+    B Jan S55 112
+    B Feb S55 106
+    C Jan S55 111
+    C Feb S55 109
+    A Jan S56 114
+    A Feb S56 106
+    B Jan S56 112
+    B Feb S56 97
+    C Jan S56 106
+    C Feb S56 107
+    A Jan S57 114
+    A Feb S57 99
+    B Jan S57 114
+    B Feb S57 103
+    C Jan S57 108
+    C Feb S57 107
+    A Jan S58 117
+    A Feb S58 100
+    B Jan S58 115
+    B Feb S58 98
+    C Jan S58 110
+    C Feb S58 113
+    A Jan S59 115
+    A Feb S59 102
+    B Jan S59 112
+    B Feb S59 106
+    C Jan S59 111
+    C Feb S59 109
+    A Jan S60 116
+    A Feb S60 97
+    B Jan S60 112
+    B Feb S60 96
+    C Jan S60 113
+    C Feb S60 112
+    A Jan S61 115
+    A Feb S61 104
+    B Jan S61 115
+    B Feb S61 98
+    C Jan S61 101
+    C Feb S61 112
+    A Jan S62 115
+    A Feb S62 99
+    B Jan S62 114
+    B Feb S62 104
+    C Jan S62 108
+    C Feb S62 110
+    A Jan S63 114
+    A Feb S63 97
+    B Jan S63 115
+    B Feb S63 98
+    C Jan S63 111
+    C Feb S63 106
+    A Jan S64 113
+    A Feb S64 101
+    B Jan S64 114
+    B Feb S64 102
+    C Jan S64 104
+    C Feb S64 107
+    A Jan S65 115
+    A Feb S65 101
+    B Jan S65 115
+    B Feb S65 97
+    C Jan S65 109
+    C Feb S65 111
+    A Jan S66 115
+    A Feb S66 101
+    B Jan S66 112
+    B Feb S66 97
+    C Jan S66 99
+    C Feb S66 110
+    A Jan S67 114
+    A Feb S67 94
+    B Jan S67 111
+    B Feb S67 93
+    C Jan S67 113
+    C Feb S67 112
+    A Jan S68 114
+    A Feb S68 101
+    B Jan S68 112
+    B Feb S68 101
+    C Jan S68 106
+    C Feb S68 107
+    A Jan S69 117
+    A Feb S69 102
+    B Jan S69 112
+    B Feb S69 98
+    C Jan S69 108
+    C Feb S69 112
+    A Jan S70 115
+    A Feb S70 106
+    B Jan S70 112
+    B Feb S70 89
+    C Jan S70 104
+    C Feb S70 110
+    A Jan S71 115
+    A Feb S71 96
+    B Jan S71 112
+    B Feb S71 94
+    C Jan S71 108
+    C Feb S71 110
+    A Jan S72 115
+    A Feb S72 96
+    B Jan S72 113
+    B Feb S72 105
+    C Jan S72 107
+    C Feb S72 107
+    A Jan S73 114
+    A Feb S73 101
+    B Jan S73 114
+    B Feb S73 107
+    C Jan S73 107
+    C Feb S73 106
+    A Jan S74 114
+    A Feb S74 102
+    B Jan S74 114
+    B Feb S74 100
+    C Jan S74 102
+    C Feb S74 109
+    A Jan S75 115
+    A Feb S75 96
+    B Jan S75 114
+    B Feb S75 96
+    C Jan S75 108
+    C Feb S75 108
+    A Jan S76 116
+    A Feb S76 105
+    B Jan S76 112
+    B Feb S76 94
+    C Jan S76 111
+    C Feb S76 107
+    A Jan S77 114
+    A Feb S77 103
+    B Jan S77 116
+    B Feb S77 110
+    C Jan S77 102
+    C Feb S77 108
+    A Jan S78 115
+    A Feb S78 106
+    B Jan S78 111
+    B Feb S78 99
+    C Jan S78 119
+    C Feb S78 102
+    A Jan S79 115
+    A Feb S79 103
+    B Jan S79 113
+    B Feb S79 92
+    C Jan S79 107
+    C Feb S79 112
+    A Jan S80 116
+    A Feb S80 93
+    B Jan S80 113
+    B Feb S80 98
+    C Jan S80 110
+    C Feb S80 111
+    A Jan S81 115
+    A Feb S81 98
+    B Jan S81 114
+    B Feb S81 99
+    C Jan S81 109
+    C Feb S81 110
+    A Jan S82 116
+    A Feb S82 106
+    B Jan S82 113
+    B Feb S82 103
+    C Jan S82 109
+    C Feb S82 107
+    A Jan S83 116
+    A Feb S83 104
+    B Jan S83 112
+    B Feb S83 103
+    C Jan S83 105
+    C Feb S83 113
+    A Jan S84 117
+    A Feb S84 112
+    B Jan S84 111
+    B Feb S84 91
+    C Jan S84 105
+    C Feb S84 110
+    A Jan S85 115
+    A Feb S85 104
+    B Jan S85 112
+    B Feb S85 103
+    C Jan S85 105
+    C Feb S85 108
+    A Jan S86 115
+    A Feb S86 102
+    B Jan S86 113
+    B Feb S86 91
+    C Jan S86 104
+    C Feb S86 110
+    A Jan S87 117
+    A Feb S87 98
+    B Jan S87 109
+    B Feb S87 104
+    C Jan S87 109
+    C Feb S87 112
+    A Jan S88 116
+    A Feb S88 109
+    B Jan S88 112
+    B Feb S88 96
+    C Jan S88 113
+    C Feb S88 107
+    A Jan S89 115
+    A Feb S89 104
+    B Jan S89 112
+    B Feb S89 98
+    C Jan S89 105
+    C Feb S89 110
+    A Jan S90 115
+    A Feb S90 99
+    B Jan S90 113
+    B Feb S90 98
+    C Jan S90 109
+    C Feb S90 109
+    A Jan S91 116
+    A Feb S91 96
+    B Jan S91 112
+    B Feb S91 104
+    C Jan S91 104
+    C Feb S91 112
+    A Jan S92 116
+    A Feb S92 101
+    B Jan S92 116
+    B Feb S92 102
+    C Jan S92 102
+    C Feb S92 112
+    A Jan S93 116
+    A Feb S93 108
+    B Jan S93 114
+    B Feb S93 100
+    C Jan S93 107
+    C Feb S93 108
+    A Jan S94 114
+    A Feb S94 104
+    B Jan S94 111
+    B Feb S94 94
+    C Jan S94 103
+    C Feb S94 110
+    A Jan S95 114
+    A Feb S95 107
+    B Jan S95 113
+    B Feb S95 101
+    C Jan S95 104
+    C Feb S95 107
+    A Jan S96 116
+    A Feb S96 96
+    B Jan S96 111
+    B Feb S96 95
+    C Jan S96 108
+    C Feb S96 115
+    A Jan S97 116
+    A Feb S97 104
+    B Jan S97 108
+    B Feb S97 80
+    C Jan S97 109
+    C Feb S97 111
+    A Jan S98 115
+    A Feb S98 101
+    B Jan S98 119
+    B Feb S98 105
+    C Jan S98 111
+    C Feb S98 109
+    A Jan S99 116
+    A Feb S99 103
+    B Jan S99 113
+    B Feb S99 94
+    C Jan S99 106
+    C Feb S99 111
+    A Jan S100 114
+    A Feb S100 99
+    B Jan S100 115
+    B Feb S100 99
+    C Jan S100 101
+    C Feb S100 112
+    A Jan S101 115
+    A Feb S101 100
+    B Jan S101 114
+    B Feb S101 99
+    C Jan S101 103
+    C Feb S101 109
+    A Jan S102 115
+    A Feb S102 102
+    B Jan S102 112
+    B Feb S102 89
+    C Jan S102 109
+    C Feb S102 108
+    A Jan S103 115
+    A Feb S103 96
+    B Jan S103 115
+    B Feb S103 97
+    C Jan S103 110
+    C Feb S103 111
+    A Jan S104 115
+    A Feb S104 106
+    B Jan S104 110
+    B Feb S104 95
+    C Jan S104 104
+    C Feb S104 114
+    A Jan S105 118
+    A Feb S105 106
+    B Jan S105 112
+    B Feb S105 99
+    C Jan S105 106
+    C Feb S105 118
+    A Jan S106 115
+    A Feb S106 100
+    B Jan S106 114
+    B Feb S106 97
+    C Jan S106 108
+    C Feb S106 110
+    A Jan S107 114
+    A Feb S107 107
+    B Jan S107 112
+    B Feb S107 95
+    C Jan S107 106
+    C Feb S107 109
+    A Jan S108 116
+    A Feb S108 107
+    B Jan S108 111
+    B Feb S108 101
+    C Jan S108 104
+    C Feb S108 115
+    A Jan S109 114
+    A Feb S109 103
+    B Jan S109 111
+    B Feb S109 100
+    C Jan S109 92
+    C Feb S109 112
+    A Jan S110 115
+    A Feb S110 100
+    B Jan S110 114
+    B Feb S110 98
+    C Jan S110 107
+    C Feb S110 111
+    A Jan S111 115
+    A Feb S111 114
+    B Jan S111 112
+    B Feb S111 101
+    C Jan S111 106
+    C Feb S111 103
+    A Jan S112 115
+    A Feb S112 101
+    B Jan S112 113
+    B Feb S112 104
+    C Jan S112 109
+    C Feb S112 106
+    A Jan S113 115
+    A Feb S113 100
+    B Jan S113 114
+    B Feb S113 102
+    C Jan S113 103
+    C Feb S113 120
+    A Jan S114 116
+    A Feb S114 89
+    B Jan S114 113
+    B Feb S114 106
+    C Jan S114 105
+    C Feb S114 114
+    A Jan S115 116
+    A Feb S115 105
+    B Jan S115 115
+    B Feb S115 96
+    C Jan S115 101
+    C Feb S115 113
+    A Jan S116 115
+    A Feb S116 107
+    B Jan S116 112
+    B Feb S116 95
+    C Jan S116 103
+    C Feb S116 110
+    A Jan S117 115
+    A Feb S117 97
+    B Jan S117 111
+    B Feb S117 107
+    C Jan S117 106
+    C Feb S117 105
+    A Jan S118 115
+    A Feb S118 95
+    B Jan S118 112
+    B Feb S118 99
+    C Jan S118 106
+    C Feb S118 112
+    A Jan S119 113
+    A Feb S119 103
+    B Jan S119 109
+    B Feb S119 96
+    C Jan S119 97
+    C Feb S119 110
+    A Jan S120 115
+    A Feb S120 102
+    B Jan S120 112
+    B Feb S120 99
+    C Jan S120 101
+    C Feb S120 107
+    A Jan S121 116
+    A Feb S121 106
+    B Jan S121 114
+    B Feb S121 101
+    C Jan S121 107
+    C Feb S121 106
+    A Jan S122 117
+    A Feb S122 112
+    B Jan S122 111
+    B Feb S122 98
+    C Jan S122 106
+    C Feb S122 109
+    A Jan S123 115
+    A Feb S123 111
+    B Jan S123 109
+    B Feb S123 102
+    C Jan S123 102
+    C Feb S123 111
+    A Jan S124 113
+    A Feb S124 105
+    B Jan S124 111
+    B Feb S124 91
+    C Jan S124 100
+    C Feb S124 108
+    A Jan S125 114
+    A Feb S125 110
+    B Jan S125 112
+    B Feb S125 95
+    C Jan S125 106
+    C Feb S125 105
+    A Jan S126 115
+    A Feb S126 96
+    B Jan S126 114
+    B Feb S126 117
+    C Jan S126 103
+    C Feb S126 110
+    A Jan S127 115
+    A Feb S127 98
+    B Jan S127 112
+    B Feb S127 91
+    C Jan S127 117
+    C Feb S127 102
+    A Jan S128 116
+    A Feb S128 105
+    B Jan S128 112
+    B Feb S128 86
+    C Jan S128 112
+    C Feb S128 110
+    A Jan S129 116
+    A Feb S129 98
+    B Jan S129 114
+    B Feb S129 101
+    C Jan S129 108
+    C Feb S129 112
+    A Jan S130 116
+    A Feb S130 105
+    B Jan S130 113
+    B Feb S130 103
+    C Jan S130 104
+    C Feb S130 111
+    A Jan S131 114
+    A Feb S131 95
+    B Jan S131 111
+    B Feb S131 100
+    C Jan S131 104
+    C Feb S131 111
+    A Jan S132 115
+    A Feb S132 102
+    B Jan S132 112
+    B Feb S132 103
+    C Jan S132 108
+    C Feb S132 106
+    A Jan S133 115
+    A Feb S133 106
+    B Jan S133 111
+    B Feb S133 98
+    C Jan S133 105
+    C Feb S133 109
+    A Jan S134 116
+    A Feb S134 108
+    B Jan S134 111
+    B Feb S134 111
+    C Jan S134 103
+    C Feb S134 105
+    A Jan S135 115
+    A Feb S135 111
+    B Jan S135 117
+    B Feb S135 101
+    C Jan S135 105
+    C Feb S135 115
+    A Jan S136 115
+    A Feb S136 104
+    B Jan S136 112
+    B Feb S136 101
+    C Jan S136 107
+    C Feb S136 108
+    A Jan S137 116
+    A Feb S137 98
+    B Jan S137 112
+    B Feb S137 98
+    C Jan S137 106
+    C Feb S137 111
+    A Jan S138 115
+    A Feb S138 106
+    B Jan S138 112
+    B Feb S138 92
+    C Jan S138 106
+    C Feb S138 114
+    A Jan S139 117
+    A Feb S139 109
+    B Jan S139 112
+    B Feb S139 109
+    C Jan S139 107
+    C Feb S139 107
+    A Jan S140 116
+    A Feb S140 108
+    B Jan S140 112
+    B Feb S140 106
+    C Jan S140 106
+    C Feb S140 111
+    A Jan S141 116
+    A Feb S141 103
+    B Jan S141 113
+    B Feb S141 103
+    C Jan S141 107
+    C Feb S141 110
+    A Jan S142 118
+    A Feb S142 100
+    B Jan S142 112
+    B Feb S142 104
+    C Jan S142 112
+    C Feb S142 110
+    A Jan S143 116
+    A Feb S143 99
+    B Jan S143 112
+    B Feb S143 92
+    C Jan S143 108
+    C Feb S143 109
+    A Jan S144 117
+    A Feb S144 103
+    B Jan S144 109
+    B Feb S144 98
+    C Jan S144 107
+    C Feb S144 114
+    A Jan S145 115
+    A Feb S145 104
+    B Jan S145 110
+    B Feb S145 102
+    C Jan S145 101
+    C Feb S145 107
+    A Jan S146 116
+    A Feb S146 102
+    B Jan S146 110
+    B Feb S146 103
+    C Jan S146 106
+    C Feb S146 107
+    A Jan S147 115
+    A Feb S147 111
+    B Jan S147 114
+    B Feb S147 110
+    C Jan S147 102
+    C Feb S147 108
+    A Jan S148 117
+    A Feb S148 111
+    B Jan S148 111
+    B Feb S148 111
+    C Jan S148 103
+    C Feb S148 105
+    A Jan S149 115
+    A Feb S149 98
+    B Jan S149 114
+    B Feb S149 85
+    C Jan S149 110
+    C Feb S149 111
+    A Jan S150 117
+    A Feb S150 104
+    B Jan S150 113
+    B Feb S150 98
+    C Jan S150 105
+    C Feb S150 109
+    A Jan S151 116
+    A Feb S151 96
+    B Jan S151 111
+    B Feb S151 100
+    C Jan S151 105
+    C Feb S151 114
+    A Jan S152 115
+    A Feb S152 111
+    B Jan S152 113
+    B Feb S152 102
+    C Jan S152 103
+    C Feb S152 108
+    A Jan S153 115
+    A Feb S153 100
+    B Jan S153 112
+    B Feb S153 86
+    C Jan S153 109
+    C Feb S153 112
+    A Jan S154 116
+    A Feb S154 96
+    B Jan S154 112
+    B Feb S154 99
+    C Jan S154 106
+    C Feb S154 111
+    A Jan S155 119
+    A Feb S155 106
+    B Jan S155 113
+    B Feb S155 104
+    C Jan S155 113
+    C Feb S155 113
+    A Jan S156 115
+    A Feb S156 98
+    B Jan S156 113
+    B Feb S156 101
+    C Jan S156 106
+    C Feb S156 113
+    A Jan S157 115
+    A Feb S157 107
+    B Jan S157 112
+    B Feb S157 88
+    C Jan S157 107
+    C Feb S157 109
+    A Jan S158 116
+    A Feb S158 114
+    B Jan S158 100
+    B Feb S158 100
+    C Jan S158 99
+    C Feb S158 108
+    A Jan S159 116
+    A Feb S159 98
+    B Jan S159 112
+    B Feb S159 101
+    C Jan S159 109
+    C Feb S159 110
+    A Jan S160 115
+    A Feb S160 107
+    B Jan S160 114
+    B Feb S160 102
+    C Jan S160 102
+    C Feb S160 108
+    A Jan S161 114
+    A Feb S161 105
+    B Jan S161 110
+    B Feb S161 101
+    C Jan S161 101
+    C Feb S161 106
+    A Jan S162 115
+    A Feb S162 87
+    B Jan S162 112
+    B Feb S162 105
+    C Jan S162 109
+    C Feb S162 120
+    A Jan S163 115
+    A Feb S163 107
+    B Jan S163 104
+    B Feb S163 94
+    C Jan S163 103
+    C Feb S163 108
+    A Jan S164 116
+    A Feb S164 102
+    B Jan S164 112
+    B Feb S164 120
+    C Jan S164 89
+    C Feb S164 113
+    A Jan S165 116
+    A Feb S165 103
+    B Jan S165 112
+    B Feb S165 102
+    C Jan S165 113
+    C Feb S165 106
+    A Jan S166 117
+    A Feb S166 102
+    B Jan S166 114
+    B Feb S166 106
+    C Jan S166 110
+    C Feb S166 111
+    A Jan S167 115
+    A Feb S167 102
+    B Jan S167 110
+    B Feb S167 96
+    C Jan S167 106
+    C Feb S167 107
+    A Jan S168 116
+    A Feb S168 102
+    B Jan S168 114
+    B Feb S168 99
+    C Jan S168 108
+    C Feb S168 111
+    A Jan S169 117
+    A Feb S169 105
+    B Jan S169 113
+    B Feb S169 106
+    C Jan S169 104
+    C Feb S169 109
+    A Jan S170 118
+    A Feb S170 108
+    B Jan S170 111
+    B Feb S170 86
+    C Jan S170 107
+    C Feb S170 114
+    A Jan S171 116
+    A Feb S171 101
+    B Jan S171 109
+    B Feb S171 87
+    C Jan S171 103
+    C Feb S171 116
+    A Jan S172 117
+    A Feb S172 103
+    B Jan S172 110
+    B Feb S172 95
+    C Jan S172 105
+    C Feb S172 111
+    A Jan S173 115
+    A Feb S173 100
+    B Jan S173 112
+    B Feb S173 108
+    C Jan S173 109
+    C Feb S173 110
+    A Jan S174 116
+    A Feb S174 100
+    B Jan S174 114
+    B Feb S174 104
+    C Jan S174 103
+    C Feb S174 110
+    A Jan S175 116
+    A Feb S175 102
+    B Jan S175 112
+    B Feb S175 104
+    C Jan S175 109
+    C Feb S175 109
+    A Jan S176 115
+    A Feb S176 109
+    B Jan S176 110
+    B Feb S176 100
+    C Jan S176 104
+    C Feb S176 110
+    A Jan S177 115
+    A Feb S177 106
+    B Jan S177 113
+    B Feb S177 101
+    C Jan S177 105
+    C Feb S177 108
+    A Jan S178 115
+    A Feb S178 98
+    B Jan S178 110
+    B Feb S178 105
+    C Jan S178 107
+    C Feb S178 109
+    A Jan S179 113
+    A Feb S179 95
+    B Jan S179 108
+    B Feb S179 100
+    C Jan S179 101
+    C Feb S179 106
+    A Jan S180 115
+    A Feb S180 103
+    B Jan S180 111
+    B Feb S180 89
+    C Jan S180 108
+    C Feb S180 107
+    A Jan S181 113
+    A Feb S181 101
+    B Jan S181 111
+    B Feb S181 92
+    C Jan S181 100
+    C Feb S181 109
+    A Jan S182 116
+    A Feb S182 104
+    B Jan S182 109
+    B Feb S182 97
+    C Jan S182 107
+    C Feb S182 108
+    A Jan S183 116
+    A Feb S183 105
+    B Jan S183 115
+    B Feb S183 101
+    C Jan S183 102
+    C Feb S183 111
+    A Jan S184 118
+    A Feb S184 104
+    B Jan S184 113
+    B Feb S184 100
+    C Jan S184 106
+    C Feb S184 108
+    A Jan S185 116
+    A Feb S185 104
+    B Jan S185 111
+    B Feb S185 110
+    C Jan S185 113
+    C Feb S185 107
+    A Jan S186 117
+    A Feb S186 107
+    B Jan S186 113
+    B Feb S186 99
+    C Jan S186 106
+    C Feb S186 110
+    A Jan S187 115
+    A Feb S187 111
+    B Jan S187 110
+    B Feb S187 94
+    C Jan S187 96
+    C Feb S187 113
+    A Jan S188 115
+    A Feb S188 100
+    B Jan S188 113
+    B Feb S188 97
+    C Jan S188 107
+    C Feb S188 110
+    A Jan S189 115
+    A Feb S189 110
+    B Jan S189 111
+    B Feb S189 100
+    C Jan S189 113
+    C Feb S189 105
+    A Jan S190 115
+    A Feb S190 100
+    B Jan S190 112
+    B Feb S190 94
+    C Jan S190 103
+    C Feb S190 111
+    A Jan S191 116
+    A Feb S191 110
+    B Jan S191 112
+    B Feb S191 98
+    C Jan S191 104
+    C Feb S191 109
+    A Jan S192 117
+    A Feb S192 102
+    B Jan S192 113
+    B Feb S192 98
+    C Jan S192 109
+    C Feb S192 105
+    A Jan S193 115
+    A Feb S193 98
+    B Jan S193 111
+    B Feb S193 89
+    C Jan S193 110
+    C Feb S193 109
+    A Jan S194 116
+    A Feb S194 103
+    B Jan S194 114
+    B Feb S194 100
+    C Jan S194 109
+    C Feb S194 112
+    A Jan S195 116
+    A Feb S195 101
+    B Jan S195 112
+    B Feb S195 105
+    C Jan S195 105
+    C Feb S195 107
+    A Jan S196 116
+    A Feb S196 104
+    B Jan S196 114
+    B Feb S196 103
+    C Jan S196 105
+    C Feb S196 110
+    A Jan S197 117
+    A Feb S197 111
+    B Jan S197 120
+    B Feb S197 102
+    C Jan S197 111
+    C Feb S197 107
+    A Jan S198 116
+    A Feb S198 103
+    B Jan S198 111
+    B Feb S198 95
+    C Jan S198 103
+    C Feb S198 111
+    A Jan S199 115
+    A Feb S199 102
+    B Jan S199 111
+    B Feb S199 85
+    C Jan S199 104
+    C Feb S199 108
+    A Jan S200 115
+    A Feb S200 96
+    B Jan S200 111
+    B Feb S200 93
+    C Jan S200 110
+    C Feb S200 112
+    A Jan S201 115
+    A Feb S201 101
+    B Jan S201 113
+    B Feb S201 102
+    C Jan S201 101
+    C Feb S201 109
+    A Jan S202 114
+    A Feb S202 104
+    B Jan S202 113
+    B Feb S202 104
+    C Jan S202 105
+    C Feb S202 105
+    A Jan S203 116
+    A Feb S203 91
+    B Jan S203 99
+    B Feb S203 97
+    C Jan S203 101
+    C Feb S203 109
+    A Jan S204 115
+    A Feb S204 97
+    B Jan S204 113
+    B Feb S204 97
+    C Jan S204 108
+    C Feb S204 110
+    A Jan S205 113
+    A Feb S205 96
+    B Jan S205 113
+    B Feb S205 92
+    C Jan S205 108
+    C Feb S205 109
+    A Jan S206 114
+    A Feb S206 83
+    B Jan S206 112
+    B Feb S206 102
+    C Jan S206 106
+    C Feb S206 109
+    A Jan S207 116
+    A Feb S207 100
+    B Jan S207 112
+    B Feb S207 100
+    C Jan S207 105
+    C Feb S207 112
+    A Jan S208 118
+    A Feb S208 96
+    B Jan S208 114
+    B Feb S208 107
+    C Jan S208 114
+    C Feb S208 110
+    A Jan S209 115
+    A Feb S209 103
+    B Jan S209 113
+    B Feb S209 101
+    C Jan S209 106
+    C Feb S209 106
+    A Jan S210 116
+    A Feb S210 103
+    B Jan S210 110
+    B Feb S210 99
+    C Jan S210 111
+    C Feb S210 103
+    A Jan S211 115
+    A Feb S211 96
+    B Jan S211 110
+    B Feb S211 95
+    C Jan S211 100
+    C Feb S211 114
+    A Jan S212 116
+    A Feb S212 95
+    B Jan S212 110
+    B Feb S212 101
+    C Jan S212 105
+    C Feb S212 108
+    A Jan S213 116
+    A Feb S213 105
+    B Jan S213 108
+    B Feb S213 97
+    C Jan S213 106
+    C Feb S213 108
+    A Jan S214 116
+    A Feb S214 103
+    B Jan S214 111
+    B Feb S214 94
+    C Jan S214 107
+    C Feb S214 109
+    A Jan S215 116
+    A Feb S215 107
+    B Jan S215 116
+    B Feb S215 103
+    C Jan S215 104
+    C Feb S215 105
+    A Jan S216 115
+    A Feb S216 97
+    B Jan S216 112
+    B Feb S216 107
+    C Jan S216 107
+    C Feb S216 108
+    A Jan S217 116
+    A Feb S217 102
+    B Jan S217 112
+    B Feb S217 100
+    C Jan S217 103
+    C Feb S217 109
+    A Jan S218 115
+    A Feb S218 96
+    B Jan S218 112
+    B Feb S218 98
+    C Jan S218 105
+    C Feb S218 111
+    A Jan S219 115
+    A Feb S219 104
+    B Jan S219 111
+    B Feb S219 91
+    C Jan S219 107
+    C Feb S219 104
+    A Jan S220 112
+    A Feb S220 92
+    B Jan S220 111
+    B Feb S220 107
+    C Jan S220 107
+    C Feb S220 107
+    A Jan S221 117
+    A Feb S221 100
+    B Jan S221 110
+    B Feb S221 101
+    C Jan S221 108
+    C Feb S221 110
+    A Jan S222 114
+    A Feb S222 97
+    B Jan S222 114
+    B Feb S222 110
+    C Jan S222 108
+    C Feb S222 107
+    A Jan S223 116
+    A Feb S223 99
+    B Jan S223 112
+    B Feb S223 98
+    C Jan S223 108
+    C Feb S223 112
+    A Jan S224 115
+    A Feb S224 105
+    B Jan S224 116
+    B Feb S224 102
+    C Jan S224 107
+    C Feb S224 111
+    A Jan S225 117
+    A Feb S225 116
+    B Jan S225 112
+    B Feb S225 102
+    C Jan S225 105
+    C Feb S225 110
+    A Jan S226 115
+    A Feb S226 101
+    B Jan S226 112
+    B Feb S226 101
+    C Jan S226 105
+    C Feb S226 108
+    A Jan S227 116
+    A Feb S227 108
+    B Jan S227 112
+    B Feb S227 105
+    C Jan S227 104
+    C Feb S227 110
+    A Jan S228 115
+    A Feb S228 108
+    B Jan S228 113
+    B Feb S228 97
+    C Jan S228 104
+    C Feb S228 109
+    A Jan S229 115
+    A Feb S229 109
+    B Jan S229 118
+    B Feb S229 99
+    C Jan S229 113
+    C Feb S229 107
+    A Jan S230 116
+    A Feb S230 92
+    B Jan S230 113
+    B Feb S230 97
+    C Jan S230 113
+    C Feb S230 110
+    A Jan S231 115
+    A Feb S231 100
+    B Jan S231 112
+    B Feb S231 97
+    C Jan S231 108
+    C Feb S231 108
+    A Jan S232 116
+    A Feb S232 110
+    B Jan S232 113
+    B Feb S232 101
+    C Jan S232 107
+    C Feb S232 108
+    A Jan S233 114
+    A Feb S233 103
+    B Jan S233 113
+    B Feb S233 101
+    C Jan S233 106
+    C Feb S233 106
+    A Jan S234 116
+    A Feb S234 105
+    B Jan S234 112
+    B Feb S234 96
+    C Jan S234 110
+    C Feb S234 107
+    A Jan S235 114
+    A Feb S235 102
+    B Jan S235 111
+    B Feb S235 99
+    C Jan S235 92
+    C Feb S235 111
+    A Jan S236 116
+    A Feb S236 106
+    B Jan S236 109
+    B Feb S236 104
+    C Jan S236 108
+    C Feb S236 110
+    A Jan S237 116
+    A Feb S237 98
+    B Jan S237 112
+    B Feb S237 103
+    C Jan S237 103
+    C Feb S237 109
+    A Jan S238 115
+    A Feb S238 110
+    B Jan S238 118
+    B Feb S238 106
+    C Jan S238 105
+    C Feb S238 112
+    A Jan S239 117
+    A Feb S239 103
+    B Jan S239 111
+    B Feb S239 112
+    C Jan S239 107
+    C Feb S239 110
+    A Jan S240 114
+    A Feb S240 107
+    B Jan S240 112
+    B Feb S240 99
+    C Jan S240 97
+    C Feb S240 111
+    A Jan S241 115
+    A Feb S241 107
+    B Jan S241 112
+    B Feb S241 97
+    C Jan S241 105
+    C Feb S241 107
+    A Jan S242 114
+    A Feb S242 99
+    B Jan S242 110
+    B Feb S242 92
+    C Jan S242 98
+    C Feb S242 113
+    A Jan S243 115
+    A Feb S243 98
+    B Jan S243 114
+    B Feb S243 96
+    C Jan S243 110
+    C Feb S243 104
+    A Jan S244 115
+    A Feb S244 110
+    B Jan S244 111
+    B Feb S244 110
+    C Jan S244 98
+    C Feb S244 112
+    A Jan S245 116
+    A Feb S245 104
+    B Jan S245 111
+    B Feb S245 100
+    C Jan S245 103
+    C Feb S245 112
+    A Jan S246 114
+    A Feb S246 89
+    B Jan S246 112
+    B Feb S246 103
+    C Jan S246 106
+    C Feb S246 107
+    A Jan S247 115
+    A Feb S247 104
+    B Jan S247 112
+    B Feb S247 99
+    C Jan S247 105
+    C Feb S247 107
+    A Jan S248 115
+    A Feb S248 95
+    B Jan S248 113
+    B Feb S248 98
+    C Jan S248 112
+    C Feb S248 108
+    A Jan S249 115
+    A Feb S249 104
+    B Jan S249 112
+    B Feb S249 93
+    C Jan S249 105
+    C Feb S249 110
+    A Jan S250 116
+    A Feb S250 103
+    B Jan S250 110
+    B Feb S250 101
+    C Jan S250 102
+    C Feb S250 114
+    A Jan S251 114
+    A Feb S251 97
+    B Jan S251 109
+    B Feb S251 92
+    C Jan S251 106
+    C Feb S251 108
+    A Jan S252 116
+    A Feb S252 102
+    B Jan S252 111
+    B Feb S252 106
+    C Jan S252 105
+    C Feb S252 108
+    A Jan S253 115
+    A Feb S253 105
+    B Jan S253 110
+    B Feb S253 104
+    C Jan S253 100
+    C Feb S253 107
+    A Jan S254 115
+    A Feb S254 104
+    B Jan S254 112
+    B Feb S254 100
+    C Jan S254 109
+    C Feb S254 107
+    A Jan S255 116
+    A Feb S255 102
+    B Jan S255 116
+    B Feb S255 110
+    C Jan S255 97
+    C Feb S255 112
+    A Jan S256 114
+    A Feb S256 100
+    B Jan S256 112
+    B Feb S256 99
+    C Jan S256 106
+    C Feb S256 108
+    A Jan S257 116
+    A Feb S257 103
+    B Jan S257 112
+    B Feb S257 113
+    C Jan S257 101
+    C Feb S257 108
+    A Jan S258 115
+    A Feb S258 105
+    B Jan S258 116
+    B Feb S258 101
+    C Jan S258 106
+    C Feb S258 109
+    A Jan S259 115
+    A Feb S259 101
+    B Jan S259 112
+    B Feb S259 99
+    C Jan S259 109
+    C Feb S259 110
+    A Jan S260 114
+    A Feb S260 102
+    B Jan S260 110
+    B Feb S260 90
+    C Jan S260 110
+    C Feb S260 107
+    A Jan S261 113
+    A Feb S261 102
+    B Jan S261 114
+    B Feb S261 91
+    C Jan S261 102
+    C Feb S261 107
+    A Jan S262 114
+    A Feb S262 103
+    B Jan S262 113
+    B Feb S262 103
+    C Jan S262 102
+    C Feb S262 114
+    A Jan S263 116
+    A Feb S263 98
+    B Jan S263 113
+    B Feb S263 95
+    C Jan S263 108
+    C Feb S263 109
+    A Jan S264 116
+    A Feb S264 92
+    B Jan S264 114
+    B Feb S264 101
+    C Jan S264 99
+    C Feb S264 111
+    A Jan S265 114
+    A Feb S265 101
+    B Jan S265 112
+    B Feb S265 99
+    C Jan S265 101
+    C Feb S265 114
+    A Jan S266 117
+    A Feb S266 101
+    B Jan S266 115
+    B Feb S266 106
+    C Jan S266 105
+    C Feb S266 116
+    A Jan S267 116
+    A Feb S267 91
+    B Jan S267 116
+    B Feb S267 99
+    C Jan S267 106
+    C Feb S267 111
+    A Jan S268 115
+    A Feb S268 105
+    B Jan S268 111
+    B Feb S268 94
+    C Jan S268 107
+    C Feb S268 101
+    A Jan S269 115
+    A Feb S269 101
+    B Jan S269 111
+    B Feb S269 96
+    C Jan S269 109
+    C Feb S269 110
+    A Jan S270 116
+    A Feb S270 97
+    B Jan S270 111
+    B Feb S270 106
+    C Jan S270 101
+    C Feb S270 115
+    A Jan S271 116
+    A Feb S271 100
+    B Jan S271 112
+    B Feb S271 101
+    C Jan S271 110
+    C Feb S271 110
+    A Jan S272 117
+    A Feb S272 108
+    B Jan S272 110
+    B Feb S272 102
+    C Jan S272 114
+    C Feb S272 108
+    A Jan S273 115
+    A Feb S273 94
+    B Jan S273 111
+    B Feb S273 92
+    C Jan S273 107
+    C Feb S273 116
+    A Jan S274 116
+    A Feb S274 107
+    B Jan S274 114
+    B Feb S274 97
+    C Jan S274 109
+    C Feb S274 110
+    A Jan S275 115
+    A Feb S275 92
+    B Jan S275 113
+    B Feb S275 100
+    C Jan S275 107
+    C Feb S275 111
+    A Jan S276 116
+    A Feb S276 99
+    B Jan S276 110
+    B Feb S276 105
+    C Jan S276 108
+    C Feb S276 109
+    A Jan S277 117
+    A Feb S277 97
+    B Jan S277 109
+    B Feb S277 89
+    C Jan S277 109
+    C Feb S277 109
+    A Jan S278 116
+    A Feb S278 102
+    B Jan S278 110
+    B Feb S278 112
+    C Jan S278 106
+    C Feb S278 107
+    A Jan S279 114
+    A Feb S279 104
+    B Jan S279 112
+    B Feb S279 94
+    C Jan S279 107
+    C Feb S279 107
+    A Jan S280 116
+    A Feb S280 108
+    B Jan S280 109
+    B Feb S280 107
+    C Jan S280 105
+    C Feb S280 107
+    A Jan S281 116
+    A Feb S281 96
+    B Jan S281 117
+    B Feb S281 104
+    C Jan S281 108
+    C Feb S281 109
+    A Jan S282 117
+    A Feb S282 98
+    B Jan S282 113
+    B Feb S282 107
+    C Jan S282 109
+    C Feb S282 113
+    A Jan S283 115
+    A Feb S283 101
+    B Jan S283 107
+    B Feb S283 117
+    C Jan S283 100
+    C Feb S283 108
+    A Jan S284 116
+    A Feb S284 97
+    B Jan S284 112
+    B Feb S284 105
+    C Jan S284 112
+    C Feb S284 111
+    A Jan S285 118
+    A Feb S285 108
+    B Jan S285 112
+    B Feb S285 83
+    C Jan S285 110
+    C Feb S285 111
+    A Jan S286 116
+    A Feb S286 99
+    B Jan S286 114
+    B Feb S286 89
+    C Jan S286 114
+    C Feb S286 113
+    A Jan S287 115
+    A Feb S287 101
+    B Jan S287 113
+    B Feb S287 105
+    C Jan S287 104
+    C Feb S287 108
+    A Jan S288 115
+    A Feb S288 100
+    B Jan S288 114
+    B Feb S288 108
+    C Jan S288 102
+    C Feb S288 111
+    A Jan S289 115
+    A Feb S289 107
+    B Jan S289 113
+    B Feb S289 109
+    C Jan S289 107
+    C Feb S289 107
+    A Jan S290 116
+    A Feb S290 115
+    B Jan S290 112
+    B Feb S290 85
+    C Jan S290 106
+    C Feb S290 109
+    A Jan S291 116
+    A Feb S291 101
+    B Jan S291 110
+    B Feb S291 100
+    C Jan S291 104
+    C Feb S291 109
+    A Jan S292 116
+    A Feb S292 102
+    B Jan S292 108
+    B Feb S292 98
+    C Jan S292 108
+    C Feb S292 109
+    A Jan S293 114
+    A Feb S293 99
+    B Jan S293 115
+    B Feb S293 93
+    C Jan S293 109
+    C Feb S293 111
+    A Jan S294 117
+    A Feb S294 105
+    B Jan S294 113
+    B Feb S294 95
+    C Jan S294 111
+    C Feb S294 108
+    A Jan S295 115
+    A Feb S295 95
+    B Jan S295 113
+    B Feb S295 120
+    C Jan S295 102
+    C Feb S295 113
+    A Jan S296 116
+    A Feb S296 95
+    B Jan S296 112
+    B Feb S296 99
+    C Jan S296 105
+    C Feb S296 110
+    A Jan S297 115
+    A Feb S297 102
+    B Jan S297 111
+    B Feb S297 106
+    C Jan S297 113
+    C Feb S297 102
+    A Jan S298 117
+    A Feb S298 115
+    B Jan S298 111
+    B Feb S298 101
+    C Jan S298 104
+    C Feb S298 107
+    A Jan S299 115
+    A Feb S299 116
+    B Jan S299 112
+    B Feb S299 103
+    C Jan S299 101
+    C Feb S299 106
+    A Jan S300 117
+    A Feb S300 107
+    B Jan S300 112
+    B Feb S300 93
+    C Jan S300 109
+    C Feb S300 108
+    A Jan S301 113
+    A Feb S301 99
+    B Jan S301 113
+    B Feb S301 95
+    C Jan S301 105
+    C Feb S301 108
+    A Jan S302 115
+    A Feb S302 106
+    B Jan S302 112
+    B Feb S302 99
+    C Jan S302 107
+    C Feb S302 107
+    A Jan S303 117
+    A Feb S303 104
+    B Jan S303 113
+    B Feb S303 100
+    C Jan S303 118
+    C Feb S303 109
+    A Jan S304 116
+    A Feb S304 90
+    B Jan S304 112
+    B Feb S304 103
+    C Jan S304 111
+    C Feb S304 111
+    A Jan S305 115
+    A Feb S305 101
+    B Jan S305 113
+    B Feb S305 95
+    C Jan S305 107
+    C Feb S305 108
+    A Jan S306 116
+    A Feb S306 99
+    B Jan S306 111
+    B Feb S306 102
+    C Jan S306 108
+    C Feb S306 108
+    A Jan S307 114
+    A Feb S307 104
+    B Jan S307 111
+    B Feb S307 87
+    C Jan S307 109
+    C Feb S307 105
+    A Jan S308 116
+    A Feb S308 101
+    B Jan S308 115
+    B Feb S308 98
+    C Jan S308 110
+    C Feb S308 108
+    A Jan S309 115
+    A Feb S309 101
+    B Jan S309 114
+    B Feb S309 93
+    C Jan S309 108
+    C Feb S309 113
+    A Jan S310 114
+    A Feb S310 101
+    B Jan S310 109
+    B Feb S310 90
+    C Jan S310 107
+    C Feb S310 108
+    A Jan S311 117
+    A Feb S311 101
+    B Jan S311 111
+    B Feb S311 98
+    C Jan S311 107
+    C Feb S311 112
+    A Jan S312 117
+    A Feb S312 96
+    B Jan S312 112
+    B Feb S312 88
+    C Jan S312 104
+    C Feb S312 110
+    A Jan S313 115
+    A Feb S313 105
+    B Jan S313 112
+    B Feb S313 97
+    C Jan S313 101
+    C Feb S313 112
+    A Jan S314 115
+    A Feb S314 108
+    B Jan S314 111
+    B Feb S314 99
+    C Jan S314 106
+    C Feb S314 107
+    A Jan S315 114
+    A Feb S315 94
+    B Jan S315 114
+    B Feb S315 94
+    C Jan S315 102
+    C Feb S315 111
+    A Jan S316 116
+    A Feb S316 97
+    B Jan S316 111
+    B Feb S316 94
+    C Jan S316 108
+    C Feb S316 112
+    A Jan S317 116
+    A Feb S317 104
+    B Jan S317 113
+    B Feb S317 103
+    C Jan S317 109
+    C Feb S317 107
+    A Jan S318 116
+    A Feb S318 101
+    B Jan S318 113
+    B Feb S318 102
+    C Jan S318 106
+    C Feb S318 110
+    A Jan S319 116
+    A Feb S319 101
+    B Jan S319 110
+    B Feb S319 92
+    C Jan S319 116
+    C Feb S319 108
+    A Jan S320 116
+    A Feb S320 100
+    B Jan S320 112
+    B Feb S320 99
+    C Jan S320 105
+    C Feb S320 113
+    A Jan S321 115
+    A Feb S321 99
+    B Jan S321 112
+    B Feb S321 95
+    C Jan S321 110
+    C Feb S321 108
+    A Jan S322 115
+    A Feb S322 106
+    B Jan S322 106
+    B Feb S322 91
+    C Jan S322 102
+    C Feb S322 111
+    A Jan S323 116
+    A Feb S323 101
+    B Jan S323 111
+    B Feb S323 98
+    C Jan S323 111
+    C Feb S323 110
+    A Jan S324 115
+    A Feb S324 101
+    B Jan S324 111
+    B Feb S324 94
+    C Jan S324 105
+    C Feb S324 107
+    A Jan S325 116
+    A Feb S325 91
+    B Jan S325 110
+    B Feb S325 102
+    C Jan S325 107
+    C Feb S325 112
+    A Jan S326 116
+    A Feb S326 97
+    B Jan S326 111
+    B Feb S326 101
+    C Jan S326 104
+    C Feb S326 109
+    A Jan S327 117
+    A Feb S327 105
+    B Jan S327 109
+    B Feb S327 97
+    C Jan S327 102
+    C Feb S327 111
+    A Jan S328 115
+    A Feb S328 93
+    B Jan S328 113
+    B Feb S328 99
+    C Jan S328 101
+    C Feb S328 111
+    A Jan S329 116
+    A Feb S329 99
+    B Jan S329 115
+    B Feb S329 105
+    C Jan S329 109
+    C Feb S329 108
+    A Jan S330 115
+    A Feb S330 106
+    B Jan S330 113
+    B Feb S330 101
+    C Jan S330 116
+    C Feb S330 104
+    A Jan S331 115
+    A Feb S331 105
+    B Jan S331 114
+    B Feb S331 101
+    C Jan S331 104
+    C Feb S331 115
+    A Jan S332 118
+    A Feb S332 111
+    B Jan S332 114
+    B Feb S332 112
+    C Jan S332 115
+    C Feb S332 106
+    A Jan S333 115
+    A Feb S333 108
+    B Jan S333 113
+    B Feb S333 111
+    C Jan S333 103
+    C Feb S333 110
+    A Jan S334 115
+    A Feb S334 118
+    B Jan S334 114
+    B Feb S334 106
+    C Jan S334 105
+    C Feb S334 103
+    A Jan S335 114
+    A Feb S335 93
+    B Jan S335 110
+    B Feb S335 92
+    C Jan S335 100
+    C Feb S335 109
+    A Jan S336 120
+    A Feb S336 96
+    B Jan S336 114
+    B Feb S336 103
+    C Jan S336 112
+    C Feb S336 117
+    A Jan S337 116
+    A Feb S337 98
+    B Jan S337 110
+    B Feb S337 98
+    C Jan S337 103
+    C Feb S337 111
+    A Jan S338 117
+    A Feb S338 102
+    B Jan S338 112
+    B Feb S338 99
+    C Jan S338 103
+    C Feb S338 112
+    A Jan S339 116
+    A Feb S339 94
+    B Jan S339 111
+    B Feb S339 97
+    C Jan S339 110
+    C Feb S339 112
+    A Jan S340 114
+    A Feb S340 103
+    B Jan S340 113
+    B Feb S340 94
+    C Jan S340 110
+    C Feb S340 104
+    A Jan S341 116
+    A Feb S341 113
+    B Jan S341 111
+    B Feb S341 103
+    C Jan S341 101
+    C Feb S341 110
+    A Jan S342 117
+    A Feb S342 99
+    B Jan S342 115
+    B Feb S342 114
+    C Jan S342 104
+    C Feb S342 108
+    A Jan S343 114
+    A Feb S343 101
+    B Jan S343 112
+    B Feb S343 98
+    C Jan S343 106
+    C Feb S343 107
+    A Jan S344 116
+    A Feb S344 101
+    B Jan S344 111
+    B Feb S344 101
+    C Jan S344 107
+    C Feb S344 109
+    A Jan S345 115
+    A Feb S345 105
+    B Jan S345 113
+    B Feb S345 100
+    C Jan S345 108
+    C Feb S345 108
+    A Jan S346 114
+    A Feb S346 94
+    B Jan S346 113
+    B Feb S346 117
+    C Jan S346 99
+    C Feb S346 111
+    A Jan S347 115
+    A Feb S347 103
+    B Jan S347 113
+    B Feb S347 105
+    C Jan S347 104
+    C Feb S347 110
+    A Jan S348 116
+    A Feb S348 94
+    B Jan S348 111
+    B Feb S348 105
+    C Jan S348 112
+    C Feb S348 111
+    A Jan S349 116
+    A Feb S349 96
+    B Jan S349 113
+    B Feb S349 103
+    C Jan S349 109
+    C Feb S349 114
+    A Jan S350 116
+    A Feb S350 105
+    B Jan S350 114
+    B Feb S350 103
+    C Jan S350 105
+    C Feb S350 109
+    A Jan S351 115
+    A Feb S351 102
+    B Jan S351 115
+    B Feb S351 99
+    C Jan S351 110
+    C Feb S351 107
+    A Jan S352 115
+    A Feb S352 100
+    B Jan S352 109
+    B Feb S352 104
+    C Jan S352 103
+    C Feb S352 111
+    A Jan S353 113
+    A Feb S353 94
+    B Jan S353 113
+    B Feb S353 103
+    C Jan S353 100
+    C Feb S353 108
+    A Jan S354 116
+    A Feb S354 101
+    B Jan S354 110
+    B Feb S354 102
+    C Jan S354 106
+    C Feb S354 109
+    A Jan S355 116
+    A Feb S355 94
+    B Jan S355 115
+    B Feb S355 109
+    C Jan S355 111
+    C Feb S355 110
+    A Jan S356 115
+    A Feb S356 93
+    B Jan S356 110
+    B Feb S356 98
+    C Jan S356 102
+    C Feb S356 112
+    A Jan S357 116
+    A Feb S357 101
+    B Jan S357 114
+    B Feb S357 94
+    C Jan S357 112
+    C Feb S357 109
+    A Jan S358 115
+    A Feb S358 94
+    B Jan S358 114
+    B Feb S358 113
+    C Jan S358 107
+    C Feb S358 111
+    A Jan S359 115
+    A Feb S359 105
+    B Jan S359 111
+    B Feb S359 97
+    C Jan S359 103
+    C Feb S359 107
+    A Jan S360 115
+    A Feb S360 101
+    B Jan S360 115
+    B Feb S360 96
+    C Jan S360 111
+    C Feb S360 107
+    A Jan S361 116
+    A Feb S361 95
+    B Jan S361 112
+    B Feb S361 104
+    C Jan S361 106
+    C Feb S361 110
+    A Jan S362 116
+    A Feb S362 101
+    B Jan S362 115
+    B Feb S362 96
+    C Jan S362 113
+    C Feb S362 109
+    A Jan S363 116
+    A Feb S363 111
+    B Jan S363 114
+    B Feb S363 101
+    C Jan S363 108
+    C Feb S363 108
+    A Jan S364 116
+    A Feb S364 103
+    B Jan S364 112
+    B Feb S364 101
+    C Jan S364 105
+    C Feb S364 110
+    A Jan S365 115
+    A Feb S365 116
+    B Jan S365 108
+    B Feb S365 102
+    C Jan S365 103
+    C Feb S365 102
+    A Jan S366 115
+    A Feb S366 100
+    B Jan S366 109
+    B Feb S366 106
+    C Jan S366 97
+    C Feb S366 110
+    A Jan S367 115
+    A Feb S367 114
+    B Jan S367 111
+    B Feb S367 101
+    C Jan S367 102
+    C Feb S367 105
+    A Jan S368 115
+    A Feb S368 103
+    B Jan S368 111
+    B Feb S368 120
+    C Jan S368 95
+    C Feb S368 108
+    A Jan S369 116
+    A Feb S369 102
+    B Jan S369 112
+    B Feb S369 103
+    C Jan S369 103
+    C Feb S369 116
+    A Jan S370 115
+    A Feb S370 96
+    B Jan S370 113
+    B Feb S370 120
+    C Jan S370 103
+    C Feb S370 103
+    A Jan S371 116
+    A Feb S371 106
+    B Jan S371 112
+    B Feb S371 102
+    C Jan S371 106
+    C Feb S371 110
+    A Jan S372 115
+    A Feb S372 101
+    B Jan S372 111
+    B Feb S372 109
+    C Jan S372 105
+    C Feb S372 106
+    A Jan S373 116
+    A Feb S373 105
+    B Jan S373 112
+    B Feb S373 94
+    C Jan S373 105
+    C Feb S373 116
+    A Jan S374 116
+    A Feb S374 103
+    B Jan S374 112
+    B Feb S374 91
+    C Jan S374 106
+    C Feb S374 113
+    A Jan S375 115
+    A Feb S375 92
+    B Jan S375 113
+    B Feb S375 96
+    C Jan S375 103
+    C Feb S375 115
+    A Jan S376 115
+    A Feb S376 100
+    B Jan S376 111
+    B Feb S376 91
+    C Jan S376 105
+    C Feb S376 112
+    A Jan S377 115
+    A Feb S377 103
+    B Jan S377 113
+    B Feb S377 103
+    C Jan S377 107
+    C Feb S377 102
+    A Jan S378 114
+    A Feb S378 97
+    B Jan S378 112
+    B Feb S378 101
+    C Jan S378 106
+    C Feb S378 109
+    A Jan S379 114
+    A Feb S379 96
+    B Jan S379 111
+    B Feb S379 96
+    C Jan S379 110
+    C Feb S379 106
+    A Jan S380 117
+    A Feb S380 108
+    B Jan S380 112
+    B Feb S380 108
+    C Jan S380 108
+    C Feb S380 108
+    A Jan S381 115
+    A Feb S381 93
+    B Jan S381 112
+    B Feb S381 108
+    C Jan S381 107
+    C Feb S381 110
+    A Jan S382 117
+    A Feb S382 104
+    B Jan S382 114
+    B Feb S382 97
+    C Jan S382 116
+    C Feb S382 109
+    A Jan S383 115
+    A Feb S383 99
+    B Jan S383 109
+    B Feb S383 97
+    C Jan S383 92
+    C Feb S383 111
+    A Jan S384 117
+    A Feb S384 106
+    B Jan S384 114
+    B Feb S384 102
+    C Jan S384 103
+    C Feb S384 109
+    A Jan S385 115
+    A Feb S385 106
+    B Jan S385 112
+    B Feb S385 92
+    C Jan S385 106
+    C Feb S385 112
+    A Jan S386 116
+    A Feb S386 97
+    B Jan S386 111
+    B Feb S386 100
+    C Jan S386 105
+    C Feb S386 111
+    A Jan S387 116
+    A Feb S387 108
+    B Jan S387 112
+    B Feb S387 97
+    C Jan S387 118
+    C Feb S387 108
+    A Jan S388 115
+    A Feb S388 100
+    B Jan S388 113
+    B Feb S388 107
+    C Jan S388 104
+    C Feb S388 105
+    A Jan S389 119
+    A Feb S389 111
+    B Jan S389 114
+    B Feb S389 104
+    C Jan S389 111
+    C Feb S389 112
+    A Jan S390 114
+    A Feb S390 99
+    B Jan S390 113
+    B Feb S390 80
+    C Jan S390 109
+    C Feb S390 109
+    A Jan S391 115
+    A Feb S391 109
+    B Jan S391 113
+    B Feb S391 100
+    C Jan S391 110
+    C Feb S391 99
+    A Jan S392 116
+    A Feb S392 106
+    B Jan S392 117
+    B Feb S392 99
+    C Jan S392 111
+    C Feb S392 109
+    A Jan S393 115
+    A Feb S393 98
+    B Jan S393 115
+    B Feb S393 99
+    C Jan S393 110
+    C Feb S393 110
+    A Jan S394 116
+    A Feb S394 92
+    B Jan S394 113
+    B Feb S394 97
+    C Jan S394 106
+    C Feb S394 112
+    A Jan S395 116
+    A Feb S395 104
+    B Jan S395 109
+    B Feb S395 100
+    C Jan S395 110
+    C Feb S395 106
+    A Jan S396 115
+    A Feb S396 104
+    B Jan S396 112
+    B Feb S396 104
+    C Jan S396 105
+    C Feb S396 111
+    A Jan S397 114
+    A Feb S397 105
+    B Jan S397 113
+    B Feb S397 95
+    C Jan S397 111
+    C Feb S397 105
+    A Jan S398 116
+    A Feb S398 99
+    B Jan S398 110
+    B Feb S398 99
+    C Jan S398 100
+    C Feb S398 107
+    A Jan S399 116
+    A Feb S399 95
+    B Jan S399 110
+    B Feb S399 101
+    C Jan S399 105
+    C Feb S399 113
+    A Jan S400 115
+    A Feb S400 107
+    B Jan S400 112
+    B Feb S400 92
+    C Jan S400 107
+    C Feb S400 107
+;
+
+param p :=
+    S1 0.0025
+    S2 0.0025
+    S3 0.0025
+    S4 0.0025
+    S5 0.0025
+    S6 0.0025
+    S7 0.0025
+    S8 0.0025
+    S9 0.0025
+    S10 0.0025
+    S11 0.0025
+    S12 0.0025
+    S13 0.0025
+    S14 0.0025
+    S15 0.0025
+    S16 0.0025
+    S17 0.0025
+    S18 0.0025
+    S19 0.0025
+    S20 0.0025
+    S21 0.0025
+    S22 0.0025
+    S23 0.0025
+    S24 0.0025
+    S25 0.0025
+    S26 0.0025
+    S27 0.0025
+    S28 0.0025
+    S29 0.0025
+    S30 0.0025
+    S31 0.0025
+    S32 0.0025
+    S33 0.0025
+    S34 0.0025
+    S35 0.0025
+    S36 0.0025
+    S37 0.0025
+    S38 0.0025
+    S39 0.0025
+    S40 0.0025
+    S41 0.0025
+    S42 0.0025
+    S43 0.0025
+    S44 0.0025
+    S45 0.0025
+    S46 0.0025
+    S47 0.0025
+    S48 0.0025
+    S49 0.0025
+    S50 0.0025
+    S51 0.0025
+    S52 0.0025
+    S53 0.0025
+    S54 0.0025
+    S55 0.0025
+    S56 0.0025
+    S57 0.0025
+    S58 0.0025
+    S59 0.0025
+    S60 0.0025
+    S61 0.0025
+    S62 0.0025
+    S63 0.0025
+    S64 0.0025
+    S65 0.0025
+    S66 0.0025
+    S67 0.0025
+    S68 0.0025
+    S69 0.0025
+    S70 0.0025
+    S71 0.0025
+    S72 0.0025
+    S73 0.0025
+    S74 0.0025
+    S75 0.0025
+    S76 0.0025
+    S77 0.0025
+    S78 0.0025
+    S79 0.0025
+    S80 0.0025
+    S81 0.0025
+    S82 0.0025
+    S83 0.0025
+    S84 0.0025
+    S85 0.0025
+    S86 0.0025
+    S87 0.0025
+    S88 0.0025
+    S89 0.0025
+    S90 0.0025
+    S91 0.0025
+    S92 0.0025
+    S93 0.0025
+    S94 0.0025
+    S95 0.0025
+    S96 0.0025
+    S97 0.0025
+    S98 0.0025
+    S99 0.0025
+    S100 0.0025
+    S101 0.0025
+    S102 0.0025
+    S103 0.0025
+    S104 0.0025
+    S105 0.0025
+    S106 0.0025
+    S107 0.0025
+    S108 0.0025
+    S109 0.0025
+    S110 0.0025
+    S111 0.0025
+    S112 0.0025
+    S113 0.0025
+    S114 0.0025
+    S115 0.0025
+    S116 0.0025
+    S117 0.0025
+    S118 0.0025
+    S119 0.0025
+    S120 0.0025
+    S121 0.0025
+    S122 0.0025
+    S123 0.0025
+    S124 0.0025
+    S125 0.0025
+    S126 0.0025
+    S127 0.0025
+    S128 0.0025
+    S129 0.0025
+    S130 0.0025
+    S131 0.0025
+    S132 0.0025
+    S133 0.0025
+    S134 0.0025
+    S135 0.0025
+    S136 0.0025
+    S137 0.0025
+    S138 0.0025
+    S139 0.0025
+    S140 0.0025
+    S141 0.0025
+    S142 0.0025
+    S143 0.0025
+    S144 0.0025
+    S145 0.0025
+    S146 0.0025
+    S147 0.0025
+    S148 0.0025
+    S149 0.0025
+    S150 0.0025
+    S151 0.0025
+    S152 0.0025
+    S153 0.0025
+    S154 0.0025
+    S155 0.0025
+    S156 0.0025
+    S157 0.0025
+    S158 0.0025
+    S159 0.0025
+    S160 0.0025
+    S161 0.0025
+    S162 0.0025
+    S163 0.0025
+    S164 0.0025
+    S165 0.0025
+    S166 0.0025
+    S167 0.0025
+    S168 0.0025
+    S169 0.0025
+    S170 0.0025
+    S171 0.0025
+    S172 0.0025
+    S173 0.0025
+    S174 0.0025
+    S175 0.0025
+    S176 0.0025
+    S177 0.0025
+    S178 0.0025
+    S179 0.0025
+    S180 0.0025
+    S181 0.0025
+    S182 0.0025
+    S183 0.0025
+    S184 0.0025
+    S185 0.0025
+    S186 0.0025
+    S187 0.0025
+    S188 0.0025
+    S189 0.0025
+    S190 0.0025
+    S191 0.0025
+    S192 0.0025
+    S193 0.0025
+    S194 0.0025
+    S195 0.0025
+    S196 0.0025
+    S197 0.0025
+    S198 0.0025
+    S199 0.0025
+    S200 0.0025
+    S201 0.0025
+    S202 0.0025
+    S203 0.0025
+    S204 0.0025
+    S205 0.0025
+    S206 0.0025
+    S207 0.0025
+    S208 0.0025
+    S209 0.0025
+    S210 0.0025
+    S211 0.0025
+    S212 0.0025
+    S213 0.0025
+    S214 0.0025
+    S215 0.0025
+    S216 0.0025
+    S217 0.0025
+    S218 0.0025
+    S219 0.0025
+    S220 0.0025
+    S221 0.0025
+    S222 0.0025
+    S223 0.0025
+    S224 0.0025
+    S225 0.0025
+    S226 0.0025
+    S227 0.0025
+    S228 0.0025
+    S229 0.0025
+    S230 0.0025
+    S231 0.0025
+    S232 0.0025
+    S233 0.0025
+    S234 0.0025
+    S235 0.0025
+    S236 0.0025
+    S237 0.0025
+    S238 0.0025
+    S239 0.0025
+    S240 0.0025
+    S241 0.0025
+    S242 0.0025
+    S243 0.0025
+    S244 0.0025
+    S245 0.0025
+    S246 0.0025
+    S247 0.0025
+    S248 0.0025
+    S249 0.0025
+    S250 0.0025
+    S251 0.0025
+    S252 0.0025
+    S253 0.0025
+    S254 0.0025
+    S255 0.0025
+    S256 0.0025
+    S257 0.0025
+    S258 0.0025
+    S259 0.0025
+    S260 0.0025
+    S261 0.0025
+    S262 0.0025
+    S263 0.0025
+    S264 0.0025
+    S265 0.0025
+    S266 0.0025
+    S267 0.0025
+    S268 0.0025
+    S269 0.0025
+    S270 0.0025
+    S271 0.0025
+    S272 0.0025
+    S273 0.0025
+    S274 0.0025
+    S275 0.0025
+    S276 0.0025
+    S277 0.0025
+    S278 0.0025
+    S279 0.0025
+    S280 0.0025
+    S281 0.0025
+    S282 0.0025
+    S283 0.0025
+    S284 0.0025
+    S285 0.0025
+    S286 0.0025
+    S287 0.0025
+    S288 0.0025
+    S289 0.0025
+    S290 0.0025
+    S291 0.0025
+    S292 0.0025
+    S293 0.0025
+    S294 0.0025
+    S295 0.0025
+    S296 0.0025
+    S297 0.0025
+    S298 0.0025
+    S299 0.0025
+    S300 0.0025
+    S301 0.0025
+    S302 0.0025
+    S303 0.0025
+    S304 0.0025
+    S305 0.0025
+    S306 0.0025
+    S307 0.0025
+    S308 0.0025
+    S309 0.0025
+    S310 0.0025
+    S311 0.0025
+    S312 0.0025
+    S313 0.0025
+    S314 0.0025
+    S315 0.0025
+    S316 0.0025
+    S317 0.0025
+    S318 0.0025
+    S319 0.0025
+    S320 0.0025
+    S321 0.0025
+    S322 0.0025
+    S323 0.0025
+    S324 0.0025
+    S325 0.0025
+    S326 0.0025
+    S327 0.0025
+    S328 0.0025
+    S329 0.0025
+    S330 0.0025
+    S331 0.0025
+    S332 0.0025
+    S333 0.0025
+    S334 0.0025
+    S335 0.0025
+    S336 0.0025
+    S337 0.0025
+    S338 0.0025
+    S339 0.0025
+    S340 0.0025
+    S341 0.0025
+    S342 0.0025
+    S343 0.0025
+    S344 0.0025
+    S345 0.0025
+    S346 0.0025
+    S347 0.0025
+    S348 0.0025
+    S349 0.0025
+    S350 0.0025
+    S351 0.0025
+    S352 0.0025
+    S353 0.0025
+    S354 0.0025
+    S355 0.0025
+    S356 0.0025
+    S357 0.0025
+    S358 0.0025
+    S359 0.0025
+    S360 0.0025
+    S361 0.0025
+    S362 0.0025
+    S363 0.0025
+    S364 0.0025
+    S365 0.0025
+    S366 0.0025
+    S367 0.0025
+    S368 0.0025
+    S369 0.0025
+    S370 0.0025
+    S371 0.0025
+    S372 0.0025
+    S373 0.0025
+    S374 0.0025
+    S375 0.0025
+    S376 0.0025
+    S377 0.0025
+    S378 0.0025
+    S379 0.0025
+    S380 0.0025
+    S381 0.0025
+    S382 0.0025
+    S383 0.0025
+    S384 0.0025
+    S385 0.0025
+    S386 0.0025
+    S387 0.0025
+    S388 0.0025
+    S389 0.0025
+    S390 0.0025
+    S391 0.0025
+    S392 0.0025
+    S393 0.0025
+    S394 0.0025
+    S395 0.0025
+    S396 0.0025
+    S397 0.0025
+    S398 0.0025
+    S399 0.0025
+    S400 0.0025
+;
+set SCENARIOS := S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15 S16 S17 S18 S19 S20 S21 S22 S23 S24 S25 S26 S27 S28 S29 S30 S31 S32 S33 S34 S35 S36 S37 S38 S39 S40 S41 S42 S43 S44 S45 S46 S47 S48 S49 S50 S51 S52 S53 S54 S55 S56 S57 S58 S59 S60 S61 S62 S63 S64 S65 S66 S67 S68 S69 S70 S71 S72 S73 S74 S75 S76 S77 S78 S79 S80 S81 S82 S83 S84 S85 S86 S87 S88 S89 S90 S91 S92 S93 S94 S95 S96 S97 S98 S99 S100 S101 S102 S103 S104 S105 S106 S107 S108 S109 S110 S111 S112 S113 S114 S115 S116 S117 S118 S119 S120 S121 S122 S123 S124 S125 S126 S127 S128 S129 S130 S131 S132 S133 S134 S135 S136 S137 S138 S139 S140 S141 S142 S143 S144 S145 S146 S147 S148 S149 S150 S151 S152 S153 S154 S155 S156 S157 S158 S159 S160 S161 S162 S163 S164 S165 S166 S167 S168 S169 S170 S171 S172 S173 S174 S175 S176 S177 S178 S179 S180 S181 S182 S183 S184 S185 S186 S187 S188 S189 S190 S191 S192 S193 S194 S195 S196 S197 S198 S199 S200 S201 S202 S203 S204 S205 S206 S207 S208 S209 S210 S211 S212 S213 S214 S215 S216 S217 S218 S219 S220 S221 S222 S223 S224 S225 S226 S227 S228 S229 S230 S231 S232 S233 S234 S235 S236 S237 S238 S239 S240 S241 S242 S243 S244 S245 S246 S247 S248 S249 S250 S251 S252 S253 S254 S255 S256 S257 S258 S259 S260 S261 S262 S263 S264 S265 S266 S267 S268 S269 S270 S271 S272 S273 S274 S275 S276 S277 S278 S279 S280 S281 S282 S283 S284 S285 S286 S287 S288 S289 S290 S291 S292 S293 S294 S295 S296 S297 S298 S299 S300 S301 S302 S303 S304 S305 S306 S307 S308 S309 S310 S311 S312 S313 S314 S315 S316 S317 S318 S319 S320 S321 S322 S323 S324 S325 S326 S327 S328 S329 S330 S331 S332 S333 S334 S335 S336 S337 S338 S339 S340 S341 S342 S343 S344 S345 S346 S347 S348 S349 S350 S351 S352 S353 S354 S355 S356 S357 S358 S359 S360 S361 S362 S363 S364 S365 S366 S367 S368 S369 S370 S371 S372 S373 S374 S375 S376 S377 S378 S379 S380 S381 S382 S383 S384 S385 S386 S387 S388 S389 S390 S391 S392 S393 S394 S395 S396 S397 S398 S399 S400;

@@ -1,0 +1,23 @@
+# Wczytanie modelu
+reset;
+model model_zimmerman.mod;
+# Rozwi¹zanie modelu
+option solver cplex;
+solve;
+# Wyœwietlenie wyników
+display x1, x2, x3;
+display zysk, emisja, koszty, zuzycie_S1, zuzycie_S2, 4*x1 + 0*x2 + 2*x3;
+display alfa;
+# Obliczenie wartoœci funkcji przynale¿noœci dla poszczególnych celów
+printf "Wartoœæ funkcji przynale¿noœci dla zysku: %f\n", (zysk - 130)/20;
+
+printf "Wartoœæ funkcji przynale¿noœci dla emisji: %f\n", (35 - emisja)/5;
+
+printf "Wartoœæ funkcji przynale¿noœci dla kosztów: %f\n", (80 - koszty)/10;
+printf "Wartoœæ funkcji przynale¿noœci dla zu¿ycia S1: %f\n", (110 - zuzycie_S1)/10;
+
+printf "Wartoœæ funkcji przynale¿noœci dla zu¿ycia S2: %f\n", (55 - zuzycie_S2)/5;
+
+  
+  
+  

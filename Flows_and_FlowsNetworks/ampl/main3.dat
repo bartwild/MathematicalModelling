@@ -1,0 +1,15 @@
+# Dane dla problemu planowania dostaw produktu FMCG
+
+# Zbiór punktów sprzeda¿y
+set POINTS := 1 2 3 4 5 6 7 8;
+
+# Plan bazowy dostaw
+param base_plan :=
+    1 240
+    2 385
+    3 138
+    4 224
+    5 144
+    6 460
+    7 198
+    8 200;

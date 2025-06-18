@@ -1,0 +1,39 @@
+model main2.mod
+data main2.dat;
+
+option solver cplex;
+solve;
+
+printf "\n--- WYNIKI PRZYDZIA£U ZESPO£ÓW DO PROJEKTÓW ---\n";
+printf "\nCa³kowity czas realizacji ca³ego portfela projektów: %.2f miesiêcy\n", Total_Time;
+
+printf "\nOptymalny przydzia³ zespo³ów do projektów:\n";
+printf "%-10s %-10s %-15s\n", "Zespó³", "Projekt", "Czas realizacji";
+printf "%-10s %-10s %-15s\n", "------", "-------", "---------------";
+
+for {i in TEAMS, j in PROJECTS: assign[i,j] > 0.5} {
+    printf "%-10s %-10s %-15.2f\n", i, j, time[i,j];
+}
+
+printf "\nZespo³y bez przydzia³u:\n";
+for {i in TEAMS: sum {j in PROJECTS} assign[i,j] < 0.5} {
+    printf "Zespó³ %s\n", i;
+}
+
+printf "\n--- ANALIZA OBCI¥¯ENIA ZESPO£ÓW ---\n";
+printf "\nProcent wykorzystania maksymalnego czasu przez ka¿dy zespó³:\n";
+printf "%-10s %-10s %-15s %-15s\n", "Zespó³", "Projekt", "Czas realizacji", "Wykorzystanie (%)";
+printf "%-10s %-10s %-15s %-15s\n", "------", "-------", "---------------", "---------------";
+
+for {i in TEAMS, j in PROJECTS: assign[i,j] > 0.5} {
+    printf "%-10s %-10s %-15.2f %-15.2f\n", i, j, time[i,j], 100*time[i,j]/max_time;
+}
+
+printf "\n--- ANALIZA KRYTYCZNEJ ŒCIE¯KI ---\n";
+printf "\nProjekty na krytycznej œcie¿ce (determinuj¹ce czas realizacji ca³ego portfela):\n";
+printf "%-10s %-10s %-15s\n", "Zespó³", "Projekt", "Czas realizacji";
+printf "%-10s %-10s %-15s\n", "------", "-------", "---------------";
+
+for {i in TEAMS, j in PROJECTS: assign[i,j] > 0.5 && abs(time[i,j] - max_time) < 0.001} {
+    printf "%-10s %-10s %-15.2f\n", i, j, time[i,j];
+}

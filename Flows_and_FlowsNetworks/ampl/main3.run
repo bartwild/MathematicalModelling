@@ -1,0 +1,44 @@
+model main3.mod;
+data main3.dat;
+
+option solver cplex;
+
+solve;
+
+printf "\n--- WYNIKI PLANOWANIA DOSTAW PRODUKTU FMCG ---\n";
+printf "\nPlan bazowy i optymalny plan dostaw:\n";
+printf "%-10s %-15s %-15s %-15s %-15s\n", "Punkt", "Plan bazowy", "Optymalny plan", "Odchylenie", "Wzglêdne odch. (%)";
+printf "%-10s %-15s %-15s %-15s %-15s\n", "------", "------------", "--------------", "----------", "----------------";
+
+for {i in POINTS} {
+    printf "%-10d %-15.0f %-15.0f %-15.0f %-15.2f\n", 
+           i, base_plan[i], delivery[i], delivery[i] - base_plan[i], 100 * rel_dev[i];
+}
+
+printf "\nSuma planu bazowego: %.0f\n", sum {i in POINTS} base_plan[i];
+printf "Suma optymalnego planu: %.0f\n", sum {i in POINTS} delivery[i];
+
+printf "\nMaksymalne wzglêdne odchylenie: %.2f%%\n", 100 * max_rel_dev;
+printf "Suma wszystkich wzglêdnych odchyleñ: %.2f%%\n", 100 * sum {i in POINTS} rel_dev[i];
+printf "Wartoœæ funkcji celu: %.4f\n", max_rel_dev + 0.1 * sum {i in POINTS} rel_dev[i];
+
+printf "\n--- WERYFIKACJA OGRANICZEÑ ---\n";
+printf "\nOgraniczenie 1: Suma towaru dostarczonego do punktów 1, 3, 8 ma byæ przynajmniej o 12%% wiêksza ni¿ w planie bazowym\n";
+printf "Suma w planie bazowym (punkty 1, 3, 8): %.0f\n", base_plan[1] + base_plan[3] + base_plan[8];
+printf "Suma w optymalnym planie (punkty 1, 3, 8): %.0f\n", delivery[1] + delivery[3] + delivery[8];
+printf "Uzyskana suma: %.0f\n", delivery[1] + delivery[3] + delivery[8];
+printf "Wymagana minimalna suma: %.0f\n", 1.12 * (base_plan[1] + base_plan[3] + base_plan[8]);
+printf "Ograniczenie spe³nione: %s\n", if delivery[1] + delivery[3] + delivery[8] >= 1.12 * (base_plan[1] + base_plan[3] + base_plan[8]) then "TAK" else "NIE";
+
+printf "\nOgraniczenie 2: Suma towaru dostarczonego do punktów 3, 5 ma byæ przynajmniej o 7%% mniejsza ni¿ w planie bazowym\n";
+printf "Suma w planie bazowym (punkty 3, 5): %.0f\n", base_plan[3] + base_plan[5];
+printf "Suma w optymalnym planie (punkty 3, 5): %.0f\n", delivery[3] + delivery[5];
+printf "Uzyskana suma: %.0f\n", delivery[3] + delivery[5];
+printf "Wymagana maksymalna suma: %.0f\n", 0.93 * (base_plan[3] + base_plan[5]);
+printf "Ograniczenie spe³nione: %s\n", if delivery[3] + delivery[5] <= 0.93 * (base_plan[3] + base_plan[5]) then "TAK" else "NIE";
+
+printf "\nOgraniczenie 3: Iloœæ towaru dostarczonego do punktu 3 ma stanowiæ przynajmniej 80%% towaru dostarczonego do punktu 7\n";
+printf "Iloœæ w punkcie 3: %.0f\n", delivery[3];
+printf "Iloœæ w punkcie 7: %.0f\n", delivery[7];
+printf "Wymagana minimalna iloœæ w punkcie 3: %.0f\n", 0.8 * delivery[7];
+printf "Ograniczenie spe³nione: %s\n", if delivery[3] >= 0.8 * delivery[7]-0.001 then "TAK" else "NIE";

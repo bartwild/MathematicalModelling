@@ -1,0 +1,49 @@
+set PLANTS := W1 W2;
+set PRODUCTS := P1 P2;
+set WAREHOUSES := M1 M2 M3;
+set STORES := S1 S2 S3 S4;
+
+set SIZES[M1] := small large;  # 5, 125 jedn
+set SIZES[M2] := none small large;  # 0, 7, 144 jedn
+set SIZES[M3] := dummy;  # Dummy bo M3 u¿ywa modu³ów
+
+param max_production:
+      P1   P2 :=
+  W1  61   51
+  W2  113  108 ;
+
+param warehouse_capacity:
+           small  large  none  dummy :=
+  M1       5      125    .     .
+  M2       7      144    0     .
+  M3       .      .      .     0     ;  # M3 u¿ywa modu³ów
+
+param warehouse_cost:
+           small  large  none  dummy :=
+  M1       20     448    .     .
+  M2       24     672    0     .
+  M3       .      .      .     0     ;  # M3 u¿ywa modu³ów
+
+param module_capacity := 14;
+
+param module_cost := 18;
+
+param demand:
+       S1   S2   S3   S4  :=
+  P1   25   40   36   31
+  P2   36   36   36   29  ;
+
+param plant_to_warehouse_cost:
+       M1   M2   M3  :=
+  W1   5    3    6
+  W2   9    6    2   ;
+
+param warehouse_to_store_cost:
+       S1   S2   S3   S4  :=
+  M1   10   15   15   5
+  M2   15   1    10   2
+  M3   2    2    2    7   ;
+  
+  
+  
+  

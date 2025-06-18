@@ -1,0 +1,30 @@
+# Zbiory
+set TYPES := A B C;
+set MONTHS := Jan Feb;
+
+# Parametry
+param sell_price := 170;    # cena sprzeda¿y produktu [z³/tonê]
+param stor_cost := 10;      # koszt magazynowania [z³/tonê]
+param stor_cap := 800;      # maksymalny stan magazynowy [ton]
+param: init_inv := 			# pocz¹tkowy stan magazynowy dla ka¿dego rodzaju [ton]
+				A 200  
+				B 200
+				C 200; 
+
+# Ceny surowego oleju (œrednie) – styczen i luty
+param price: Jan Feb :=
+		  A 116 100
+		  B 102 107
+		  C 113 110;
+
+# Limity rafinacji:
+param cap_plant := 220;   	# oleje roœlinne: A, B
+param cap_nonplant := 270;  # olej nieroœlinny: C
+
+# Wspó³czynniki twardoœci:
+param: hardness :=
+   A 8.4
+   B 6.2
+   C 2.0;
+param M := 10000;  # du¿a sta³a
+

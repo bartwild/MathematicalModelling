@@ -1,0 +1,20 @@
+--- WYNIKI PLANOWANIA DOSTAW PRODUKTU FMCG ---
+
+Plan bazowy i optymalny plan dostaw:
+Punkt      Plan bazowy     Optymalny plan  Odchylenie      Wzglêdne odch. (%)
+------     ------------    --------------  ----------      ----------------
+1          240             277             37              15.26          
+2          385             385             0               0.00           
+3          138             140             2               1.62           
+4          224             224             0               0.00           
+5          144             122             -22             15.26          
+6          460             435             -25             5.36           
+7          198             175             -23             11.47          
+8          200             231             31              15.26          
+
+Suma planu bazowego: 1989
+Suma optymalnego planu: 1989
+
+Maksymalne wzglêdne odchylenie: 15.26%
+Suma wszystkich wzglêdnych odchyleñ: 64.22%
+Wartoœæ funkcji celu: 0.2168

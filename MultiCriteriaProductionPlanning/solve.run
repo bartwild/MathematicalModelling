@@ -1,0 +1,48 @@
+reset;
+model model_punkt_odniesienia.mod;
+# Rozwi¹zanie modelu
+solve;
+
+# Wyœwietlenie wyników
+printf "\n===== WYNIKI OPTYMALIZACJI =====\n\n";
+
+# Zmienne decyzyjne
+printf "Zmienne decyzyjne:\n";
+printf "x1 = %.2f (liczba sztuk produktu P1)\n", x1;
+printf "x2 = %.2f (liczba sztuk produktu P2)\n", x2;
+printf "x3 = %.2f (liczba sztuk produktu P3)\n\n", x3;
+
+# Wartoœci funkcji celu
+printf "Wartoœci funkcji celu:\n";
+printf "Zysk = %.2f\n", f[1];
+printf "Emisja = %.2f\n", f[2];
+printf "Koszty = %.2f\n\n", f[3];
+
+# Znormalizowane odleg³oœci
+printf "Znormalizowane odleg³oœci:\n";
+printf "z[1] (zysk) = %.2f\n", z[1];
+printf "z[2] (emisja) = %.2f\n", z[2];
+printf "z[3] (koszty) = %.2f\n", z[3];
+printf "z[4] (zu¿ycie S1) = %.2f\n", z[4];
+printf "z[5] (zu¿ycie S2) = %.2f\n", z[5];
+printf "min_z = %.2f\n\n", min_z;
+
+# Wykorzystanie zasobów
+printf "Wykorzystanie zasobów:\n";
+printf "Sk³adnik S1: %.0f / 110 (%.1f%%)\n", 2*x1 + 10*x2 + 4*x3, 100*(2*x1 + 10*x2 + 4*x3)/110;
+printf "Sk³adnik S2: %.0f / 55 (%.1f%%)\n", 8*x1 + 1*x2 + 4*x3, 100*(8*x1 + 1*x2 + 4*x3)/55;
+printf "Sk³adnik S3: %.0f / 50 (%.1f%%)\n\n", 4*x1 + 0*x2 + 2*x3, 100*(4*x1 + 0*x2 + 2*x3)/50;
+
+# Punkty odniesienia i osi¹gniête wartoœci
+printf "Porównanie z punktami odniesienia:\n";
+printf "%-10s %-10s %-10s %-10s\n", "Funkcja", "Wartoœæ", "Rezerwacja", "Aspiracja";
+printf "%-10s %-10d %-10d %-10d\n", "Zysk", f[1], r[1], a[1];
+printf "%-10s %-10d %-10d %-10d\n", "Emisja", f[2], r[2], a[2];
+printf "%-10s %-10d %-10d %-10d\n\n", "Koszty", f[3], r[3], a[3];
+
+# Wartoœæ funkcji osi¹gniêcia
+printf "Wartoœæ funkcji osi¹gniêcia: %.5f\n", min_z + epsilon * sum {i in CELE} z[i];
+printf "===================================\n";
+
+
+

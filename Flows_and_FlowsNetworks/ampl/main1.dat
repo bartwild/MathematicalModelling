@@ -1,0 +1,44 @@
+# Definicja zbiorów
+set NODES := A B C D E F G H;
+set SOURCES := A B C;
+set TRANS := D E;
+set SINKS := F G H;
+
+# Definicja krawêdzi
+set ARCS := 
+    (A,D) (A,E)
+    (B,D) (B,E)
+    (C,D) (C,E)
+    (D,E)
+    (D,F) (D,G) (D,H)
+    (E,F) (E,G) (E,H);
+
+# Koszty jednostkowe transportu
+param cost :=
+    A D 3    A E 6
+    B D 6    B E 3
+    C D 4    C E 5
+    D E 2
+    D F 5    D G 7    D H 3
+    E F 5    E G 4    E H 2;
+
+# Maksymalne przepustowoœci krawêdzi
+param capacity :=
+    A D 8    A E 10
+    B D 10   B E 13
+    C D 10   C E 8
+    D E 20
+    D F 16   D G 6    D H 10
+    E F 7    E G 4    E H 2;
+
+# Poda¿ w kopalniach
+param supply :=
+    A 10
+    B 13
+    C 22;
+
+# Popyt w elektrowniach 
+param demand :=
+    F 15
+    G 10
+    H 10;

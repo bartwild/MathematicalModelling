@@ -1,0 +1,52 @@
+model main1.mod;
+data main1.dat;
+
+solve;
+
+printf "\n--- WYNIKI OPTYMALIZACJI ---\n";
+printf "\nOptymalny koszt transportu: %.2f\n", Total_Cost;
+
+printf "\nPrzep³ywy na poszczególnych krawêdziach:\n";
+printf "%-8s %-8s %-12s %-12s %-12s\n", "Od", "Do", "Przep³yw", "Pojemnoœæ", "Koszt jedn.";
+printf "%-8s %-8s %-12s %-12s %-12s\n", "--", "--", "--------", "---------", "----------";
+
+for {(i,j) in ARCS} {
+    printf "%-8s %-8s %-12.2f %-12.2f %-12.2f\n", 
+        i, j, flow[i,j], capacity[i,j], cost[i,j];
+}
+
+printf "\nWykorzystanie przepustowoœci krawêdzi:\n";
+printf "%-8s %-8s %-12s %-12s %-12s\n", "Od", "Do", "Przep³yw", "Pojemnoœæ", "Wykorzystanie (%)";
+printf "%-8s %-8s %-12s %-12s %-12s\n", "--", "--", "--------", "---------", "---------------";
+
+for {(i,j) in ARCS} {
+    printf "%-8s %-8s %-12.2f %-12.2f %-12.2f\n", 
+        i, j, flow[i,j], capacity[i,j], 100*flow[i,j]/capacity[i,j];
+}
+
+printf "\nBilans przep³ywów w wêz³ach:\n";
+printf "%-8s %-12s %-12s %-12s\n", "Wêze³", "Wp³yw", "Wyp³yw", "Bilans";
+printf "%-8s %-12s %-12s %-12s\n", "-----", "------", "-------", "------";
+
+param inflow {NODES} default 0;
+param outflow {NODES} default 0;
+
+for {i in NODES} {
+    let inflow[i] := sum {j in NODES: (j,i) in ARCS} flow[j,i];
+    let outflow[i] := sum {j in NODES: (i,j) in ARCS} flow[i,j];
+}
+
+for {i in NODES} {
+    printf "%-8s %-12.2f %-12.2f %-12.2f\n", 
+        i, inflow[i], outflow[i], inflow[i] - outflow[i];
+}
+
+printf "\n--- ANALIZA W¥SKIEGO GARD£A ---\n";
+printf "\nKrawêdzie z wysokim wykorzystaniem przepustowoœci (potencjalne w¹skie gard³a):\n";
+printf "%-8s %-8s %-12s %-12s %-12s\n", "Od", "Do", "Przep³yw", "Pojemnoœæ", "Wykorzystanie (%)";
+printf "%-8s %-8s %-12s %-12s %-12s\n", "--", "--", "--------", "---------", "---------------";
+
+for {(i,j) in ARCS: flow[i,j]/capacity[i,j] > 0.9} {
+    printf "%-8s %-8s %-12.2f %-12.2f %-12.2f\n", 
+        i, j, flow[i,j], capacity[i,j], 100*flow[i,j]/capacity[i,j];
+}
